@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddFood"
+    tools:showIn="@layout/activity_add_food"
+    android:layout_marginTop="50dp" >
+    <!--   android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="8dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginBottom="8dp"
+       android:ems="10"
+       android:hint="Email"
+       android:inputType="textEmailAddress"
+       android:textColor="@color/colorPlain"
+       android:textColorHint="@color/colorPlain"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.313"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+        <TextView
+            android:id="@+id/addTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/addEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:textColor="@color/colorPlain"
+            android:textColorHint="@color/colorPlain"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/addTextView"
+            android:layout_toRightOf="@id/addTextView" />
+
+
+        <TextView
+            android:id="@+id/addCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textSize="20sp"
+            android:layout_below="@id/addTextView"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/addCaloriesEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/addCalories"
+            android:layout_toRightOf="@id/addCalories"
+            android:layout_below="@id/addEditText"
+            />
+
+
+        <TextView
+            android:id="@+id/addCarbohydrates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbohydrates"
+            android:textSize="20sp"
+            android:layout_below="@id/addCalories"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/addCarbohydratesEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/addCarbohydrates"
+            android:layout_toRightOf="@id/addCarbohydrates"
+            android:layout_below="@id/addCaloriesEditText" />
+
+        <TextView
+            android:id="@+id/addProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein"
+            android:textSize="20sp"
+            android:layout_below="@id/addCarbohydrates"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/addProteinEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/addProtein"
+            android:layout_toRightOf="@id/addProtein"
+            android:layout_below="@id/addCarbohydratesEditText" />
+        <TextView
+            android:id="@+id/addFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fat"
+            android:textSize="20sp"
+            android:layout_below="@id/addProtein"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/addFatEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/addFat"
+            android:layout_toRightOf="@id/addFat"
+            android:layout_below="@id/addProteinEditText" />
+
+        <Button
+            android:id="@+id/addFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="20sp"
+
+            android:layout_below="@id/addFat"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+

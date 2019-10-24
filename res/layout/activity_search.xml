@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.jessicathornsby.bottomviewnavigation.MainActivity"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lowCalorieCheck"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="67dp"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextAppearance="@style/tabAppearance" />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#FFFFFF"
+
+
+        app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        app:searchBackground="@color/colorPrimaryDark"
+        app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+        app:searchSuggestionBackground="@color/colorPrimaryDark"
+        app:searchSuggestionIcon="@drawable/ic_suggestion" />
+
+    <Button
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view"
+        android:layout_centerHorizontal="true"
+        android:hint="Select Date"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+    <CheckBox
+        android:id="@+id/lowCalorieCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tvDate"
+        android:text="Low Calorie"
+ />
+
+    <CheckBox
+        android:id="@+id/lowCarbsCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/lowCalorieCheck"
+        android:layout_below="@+id/tvDate"
+        android:text="Low Carbs"
+        />
+    <CheckBox
+        android:id="@+id/highProteinCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_below="@+id/lowCalorieCheck"
+        android:text="High Protein"
+        />
+    <CheckBox
+        android:id="@+id/lowFatCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/lowCarbsCheck"
+        android:layout_toRightOf="@+id/highProteinCheck"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25sp"
+        android:text="Low Fat"
+        />
+<Button
+    android:id="@+id/filterButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/colorPlain"
+    android:background="@color/colorPrimaryDark"
+    android:text="Filter"
+    android:layout_marginTop="20sp"
+    android:layout_below="@+id/tvDate"
+    android:layout_alignParentRight="true"
+    />
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/highProteinCheck"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:divider="#806326"
+        android:dividerHeight="1dp"></ListView>
+</RelativeLayout>

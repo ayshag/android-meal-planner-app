@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addItem">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.jessicathornsby.bottomviewnavigation.MainActivity">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/usertabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/colorPrimaryDark"
+            app:tabTextColor="@color/colorPlain"
+            app:tabTextAppearance="@style/tabAppearance">
+
+            <android.support.design.widget.TabItem
+                android:text="Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <android.support.design.widget.TabItem
+                android:text="Logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </android.support.design.widget.TabLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/itemSelected"
+        android:layout_width="385dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDiary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDiary"
+        android:layout_width="200sp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="8dp"
+        android:text="ADD TO DIARY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPlain"
+
+        app:layout_constraintBottom_toTopOf="@+id/textProtein"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/itemSelected" />
+
+    <TextView
+        android:id="@+id/textProtein"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="32dp"
+        android:text="Protein"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textCarbs"
+        app:layout_constraintEnd_toStartOf="@+id/textProteinValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiary" />
+
+    <TextView
+        android:id="@+id/textProteinValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textProtein"
+        app:layout_constraintTop_toBottomOf="@+id/itemSelected" />
+
+    <TextView
+        android:id="@+id/textCarbs"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="234dp"
+        android:text="Carbs"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textCarbValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProtein" />
+
+    <TextView
+        android:id="@+id/textCarbValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="1dp"
+        android:text="71.4g"
+        app:layout_constraintBottom_toTopOf="@+id/textFiberValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/textProteinValue" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="1dp"
+        android:text="Fiber"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/textFiberValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCarbs" />
+
+    <TextView
+        android:id="@+id/textFiberValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="1.2g"
+        app:layout_constraintBottom_toTopOf="@+id/textSugarValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textCarbValue" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="37dp"
+        android:text="Sugars"
+        app:layout_constraintBottom_toTopOf="@+id/textFat"
+        app:layout_constraintEnd_toStartOf="@+id/textSugarValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textFat"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:text="Fat"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textSaturatedFat"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textSaturatedFat"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:text="Saturated Fat"
+        app:layout_constraintBottom_toTopOf="@+id/textUnsaturatedFat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFat" />
+
+    <TextView
+        android:id="@+id/textUnsaturatedFat"
+        android:layout_width="102dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="37dp"
+        android:text="Unsaturated Fat"
+        app:layout_constraintBottom_toTopOf="@+id/textOther"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSaturatedFat" />
+
+    <TextView
+        android:id="@+id/textOther"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Other"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textCholestrol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUnsaturatedFat" />
+
+    <TextView
+        android:id="@+id/textCholestrol"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:text="Cholestrol"
+        app:layout_constraintBottom_toTopOf="@+id/textPottasium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOther" />
+
+    <TextView
+        android:id="@+id/textPottasium"
+        android:layout_width="82dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="50dp"
+        android:text="Pottasium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCholestrol" />
+
+
+    <TextView
+        android:id="@+id/textUnSatFatValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="39dp"
+        android:text="0.6g"
+        app:layout_constraintBottom_toTopOf="@+id/textOthersValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textUnsaturatedFat"
+        app:layout_constraintTop_toBottomOf="@+id/textSatFatValue" />
+
+    <TextView
+        android:id="@+id/textSugarValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:text="1.0g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textFiberValue" />
+
+    <TextView
+        android:id="@+id/textPottasiumValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="234dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="45dp"
+        android:text="100g"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPottasium" />
+
+    <TextView
+        android:id="@+id/textSatFatValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="10dp"
+        android:text="0.2g"
+        app:layout_constraintBottom_toTopOf="@+id/textUnSatFatValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSaturatedFat"
+        app:layout_constraintTop_toBottomOf="@+id/textFatValue" />
+
+    <TextView
+        android:id="@+id/textCholestrolValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="234dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="100g"
+        app:layout_constraintBottom_toTopOf="@+id/textPottasiumValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCholestrol" />
+
+    <TextView
+        android:id="@+id/textnutritionalInformation"
+        android:layout_width="189dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="35dp"
+        android:text="Nutritional Information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textCarbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiary" />
+
+    <TextView
+        android:id="@+id/textFatValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="10dp"
+        android:text="0.8g"
+        app:layout_constraintBottom_toTopOf="@+id/textSatFatValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textFat"
+        app:layout_constraintTop_toBottomOf="@+id/textSugarValue"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/textOthersValue"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginEnd="16dp"
+        android:text="200g"
+        app:layout_constraintBottom_toTopOf="@+id/textCholestrolValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textOther" />
+
+
+</android.support.constraint.ConstraintLayout>

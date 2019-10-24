@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008000</color>
+<color name="colorPrimaryDark">#FFD700</color>
+<color name="colorAccent">#FFD700</color>
+    <color name="colorPlain">#FFFFFF</color>
+    <color name ="colorRed">#D60000</color>
+    <color name ="colorBlack">#000000</color>
+    <color name = "colorGray">#bebebe</color>
+
+</resources>
+
+    <!--   <color name="colorPrimary">#008577</color>
+       <color name="colorPrimaryDark">#00574B</color>
+       <color name="colorAccent">#D81B60</color> bebebe-->
+<!--#FFD700 - Yellow
+#00007F
+#D60000 - Red
+-->

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="50dp"
+    tools:context=".FoodDetails" >
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="85dp"
+        android:text="Food : "
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/caloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/nameTextView"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/carbohydratesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/caloriesTextView"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/proteinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/carbohydratesTextView"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/fatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/proteinTextView"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Meal : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/fatTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/fiberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiber : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/categoryTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/sugarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/fiberTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/satFatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturated Fat : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/sugarTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/unSatFatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unsaturated Fat : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/satFatTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/cholestrolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cholestrol : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/unSatFatTextView"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/pottasiumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pottasium : "
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/cholestrolTextView"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pottasiumTextView"
+        android:textColor="@color/colorPlain"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Edit" />
+
+    />
+
+</RelativeLayout>
+
+
